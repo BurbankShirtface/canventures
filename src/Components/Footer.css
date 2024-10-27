@@ -1,0 +1,49 @@
+.footer {
+  background-color: #9fa0a6; /* Match the header color for consistency */
+  color: white;
+  height: 10vh;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #3498db; /* Match the header hover color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .footer-nav {
+    margin-top: 10px;
+  }
+}

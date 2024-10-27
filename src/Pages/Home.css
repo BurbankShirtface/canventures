@@ -1,0 +1,134 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 12vh;
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3em auto 5em;
+  position: relative;
+  /* overflow: hidden; */
+  min-height: 30vh;
+  text-align: center;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5); /* Increased scale */
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/LogoSmall.png"); /* Adjust the path as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.05; /* Adjust this value to make the logo more or less visible */
+  z-index: -1;
+}
+
+.landing-text {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+}
+
+.featured-products,
+.about-summary {
+  margin-top: 40px;
+}
+
+.product-categories {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.category {
+  flex: 1;
+  max-width: 40%;
+}
+
+.category h3 {
+  margin-bottom: 1rem;
+}
+
+.category h3 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.category h3 a:hover {
+  color: #ff0000; /* Adjust this to your preferred hover color */
+}
+
+.slick-slider {
+  margin-bottom: 1rem;
+}
+
+.slide-img {
+  width: 100%;
+  height: 0;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  position: relative;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slide-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.about-summary {
+  width: 80%;
+  margin: 8em auto 2em;
+}
+
+.slider-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.slider-link:hover {
+  cursor: pointer;
+}
+
+/* Hide Slick Slider dots */
+.slick-dots {
+  display: none !important;
+}
+
+.contact-us {
+  margin: 5em 0; /* Increased top and bottom margin */
+  text-align: center;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #d12027; /* Match this to your header background color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #a01a1e; /* Slightly darker shade for hover effect */
+}
