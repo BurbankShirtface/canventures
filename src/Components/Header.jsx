@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/LogoSmall.png";
 import "./Header.css";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="header-content">
@@ -15,22 +21,35 @@ function Header() {
             </p>
           </Link>
         </div>
-        <nav className="navigation">
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
+        <nav className={`navigation ${isMenuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/custom-sheds">Custom Sheds</Link>
+              <Link to="/custom-sheds" onClick={toggleMenu}>
+                Custom Sheds
+              </Link>
             </li>
             <li>
-              <Link to="/custom-trailers">Custom Trailers</Link>
+              <Link to="/custom-trailers" onClick={toggleMenu}>
+                Custom Trailers
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={toggleMenu}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={toggleMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

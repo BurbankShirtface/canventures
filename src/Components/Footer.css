@@ -1,14 +1,13 @@
 .footer {
-  background-color: #9fa0a6; /* Match the header color for consistency */
+  background-color: #9fa0a6;
   color: white;
-  height: 10vh;
+  padding: 20px 0;
   width: 100%;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,19 +30,30 @@
 }
 
 .footer-nav a:hover {
-  color: #3498db; /* Match the header hover color */
+  color: #3498db;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    justify-content: center;
     text-align: center;
-    padding: 10px 0;
   }
 
   .footer-nav {
     margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    width: 100%;
+  }
+  .landing {
+    width: 100%;
+  }
+  .landing-text {
+    width: 95%;
   }
 }
