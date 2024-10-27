@@ -38,7 +38,7 @@ function Home() {
     <div className="home">
       <div className="landing">
         <h1>
-          Welcome to <span className="red">CANVENTURES</span>
+          Welcome to <span className="red">CAN</span>Ventures
         </h1>
         <p className="landing-text">
           Your premier distributor of custom-built sheds and trailers. We
@@ -53,7 +53,7 @@ function Home() {
           <div className="category">
             <h3>
               <a href="/custom-sheds">
-                <span className="red">Can</span>Sheds
+                <span className="red">CAN</span>Sheds
               </a>
             </h3>
             <a href="/custom-sheds" className="slider-link">
@@ -83,7 +83,7 @@ function Home() {
           <div className="category">
             <h3>
               <a href="/custom-trailers">
-                <span className="red">Can</span>Trailers
+                <span className="red">CAN</span>Trailers
               </a>
             </h3>
             <a href="/custom-trailers" className="slider-link">

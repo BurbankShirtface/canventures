@@ -7,13 +7,14 @@ import CustomSheds from "./Pages/CustomSheds";
 import CustomTrailers from "./Pages/CustomTrailers";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import "./App.css";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-        <main>
+        <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/custom-sheds" element={<CustomSheds />} />
