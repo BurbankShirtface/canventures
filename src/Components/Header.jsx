@@ -21,8 +21,11 @@ function Header() {
             </p>
           </Link>
         </div>
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
+        <button
+          className={`menu-toggle ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? "✖" : "☰"}
         </button>
         <nav className={`navigation ${isMenuOpen ? "open" : ""}`}>
           <ul>

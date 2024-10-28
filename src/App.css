@@ -1,3 +1,71 @@
+/* Common page layout styles */
+.custom-sheds,
+.custom-trailers,
+.about,
+.contact {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Common heading styles */
+.custom-sheds h1,
+.custom-trailers h1,
+.about h1,
+.contact h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Common CTA section styles */
+.cta {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 2em;
+  border-radius: 10px;
+  margin-top: 2em;
+}
+
+/* Common contact button styles */
+.contact-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Suez One", serif;
+  text-decoration: none;
+  color: white;
+  background-color: #d12027;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #a01a1e;
+}
+
+.cta button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #d12027;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #a01a1e;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -10,4 +78,14 @@
 .main-content {
   flex: 1;
   /* padding-top: 12vh; */
+}
+
+.cta h2 {
+  margin: 1em auto;
+}
+.cta p {
+  /* margin: 1em auto; */
+}
+.cta a {
+  margin: 1em auto;
 }

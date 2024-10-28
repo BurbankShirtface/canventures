@@ -9,26 +9,49 @@ function Contact() {
       <section className="contact-info">
         <h2>Get in Touch</h2>
         <p>
-          We're here to answer any questions you may have about our custom sheds
-          and trailers.
+          Contact us today for a free estimate or consultation on your new
+          custom shed or trailer.
         </p>
         <ul>
-          <li>Phone: (123) 456-7890</li>
-          <li>Email: info@canventures.com</li>
-          <li>Address: 123 Main St, Toronto, ON M1M 1M1</li>
+          <li>
+            Phone: <a href="tel:5198302453">(519) 830-2453</a>
+          </li>
+          <li>
+            Email:{" "}
+            <a href="mailto:craig@becknertrailers.com">
+              craig@becknertrailers.com
+            </a>
+          </li>
+          <li>Address: 10965 Van Camp Rd, Mountain, Ontario</li>
         </ul>
       </section>
 
       <section className="contact-form">
         <h2>Send Us a Message</h2>
-        <form>
+        <form autoComplete="off">
           <div className="form-group">
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autoComplete="off"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="phone">Phone: (optional)</label>
+            <input type="tel" id="phone" name="phone" autoComplete="off" />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autoComplete="off"
+              required
+            />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
@@ -40,9 +63,7 @@ function Contact() {
 
       <section className="business-hours">
         <h2>Business Hours</h2>
-        <p>Monday - Friday: 9am - 5pm</p>
-        <p>Saturday: 10am - 2pm</p>
-        <p>Sunday: Closed</p>
+        <p>Open 7 days a week: 7am - 7pm</p>
       </section>
     </div>
   );

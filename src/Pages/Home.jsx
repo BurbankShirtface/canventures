@@ -10,6 +10,13 @@ import shed2 from "../assets/shed2.png";
 import shed3 from "../assets/shed3.png";
 import shed4 from "../assets/shed4.png";
 import shed5 from "../assets/shed5.png";
+import shed6 from "../assets/shed6.png";
+import shed7 from "../assets/shed7.png";
+import shed8 from "../assets/shed8.png";
+import shed9 from "../assets/shed9.png";
+import shed10 from "../assets/shed10.png";
+import shed11 from "../assets/shed11.png";
+import shed12 from "../assets/shed12.png";
 import trailer1 from "../assets/trailer1.png";
 import trailer2 from "../assets/trailer2.png";
 import trailer3 from "../assets/trailer3.png";
@@ -17,12 +24,16 @@ import trailer4 from "../assets/trailer4.png";
 import trailer5 from "../assets/trailer5.png";
 import trailer6 from "../assets/trailer6.png";
 import trailer7 from "../assets/trailer7.png";
+import trailer8 from "../assets/trailer8.png";
+import trailer9 from "../assets/trailer9.png";
+import trailer10 from "../assets/trailer10.png";
+import trailer11 from "../assets/trailer11.png";
 
 function Home() {
   const sliderSettings = {
     dots: false, // This will remove the dots from the Slick Slider
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -77,6 +88,27 @@ function Home() {
                 <div className="slide-img">
                   <img src={shed5} alt="Custom Shed 5" />
                 </div>
+                <div className="slide-img">
+                  <img src={shed6} alt="Custom Shed 6" />
+                </div>
+                <div className="slide-img">
+                  <img src={shed7} alt="Custom Shed 7" />
+                </div>
+                <div className="slide-img">
+                  <img src={shed8} alt="Custom Shed 8" />
+                </div>
+                <div className="slide-img">
+                  <img src={shed9} alt="Custom Shed 9" />
+                </div>
+                <div className="slide-img">
+                  <img src={shed10} alt="Custom Shed 10" />
+                </div>
+                <div className="slide-img">
+                  <img src={shed11} alt="Custom Shed 11" />
+                </div>
+                <div className="slide-img">
+                  <img src={shed12} alt="Custom Shed 12" />
+                </div>
               </Slider>
             </a>
           </div>
@@ -112,6 +144,18 @@ function Home() {
                 </div>
                 <div className="slide-img">
                   <img src={trailer7} alt="Custom Trailer 7" />
+                </div>
+                <div className="slide-img">
+                  <img src={trailer8} alt="Custom Trailer 8" />
+                </div>
+                <div className="slide-img">
+                  <img src={trailer9} alt="Custom Trailer 9" />
+                </div>
+                <div className="slide-img">
+                  <img src={trailer10} alt="Custom Trailer 10" />
+                </div>
+                <div className="slide-img">
+                  <img src={trailer11} alt="Custom Trailer 11" />
                 </div>
               </Slider>
             </a>

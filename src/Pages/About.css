@@ -8,15 +8,39 @@
 
 .about h1 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .company-intro,
 .mission-vision,
 .team,
-.values,
-.cta {
+.values {
+  margin-top: 4em;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
   margin-top: 2em;
+}
+
+.team-member {
+  flex: 1;
+  padding: 1.5em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member h3 {
+  color: #d12027;
+  margin-bottom: 0.5em;
+}
+
+.team-member p {
+  margin-bottom: 1em;
 }
 
 .values ul {
@@ -28,23 +52,36 @@
   margin-bottom: 0.5em;
 }
 
-.cta {
+/* For mobile screens, stack the items vertically */
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+  }
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3em auto;
+  position: relative;
+  min-height: 30vh;
   text-align: center;
-  background-color: #f0f0f0;
-  padding: 2em;
-  border-radius: 10px;
 }
 
-.cta button {
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.cta button:hover {
-  background-color: #cc0000;
+.about-header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/LogoSmall.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.05;
+  z-index: -1;
 }

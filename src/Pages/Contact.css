@@ -1,14 +1,4 @@
-.contact {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.contact h1 {
-  text-align: center;
-  margin-bottom: 1em;
-}
-
+/* Only keeping contact-specific styles */
 .contact-info,
 .contact-form,
 .business-hours {
@@ -42,19 +32,37 @@
 .form-group textarea {
   width: 100%;
   padding: 0.5em;
+  background-color: #ebebeb; /* Light gray background */
+  border: 1px solid #b8b8b8; /* Light border */
+  border-radius: 4px; /* Slightly rounded corners */
+  color: black;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000000; /* Red border when focused */
+  background-color: #fff; /* White background when focused */
+  cursor: text;
+  caret-color: #000000;
 }
 
 .contact-form button {
-  background-color: #ff0000;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Suez One", serif;
+  text-decoration: none;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
+  background-color: #d12027;
   border-radius: 5px;
-  align-self: flex-start;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  align-self: center;
 }
 
 .contact-form button:hover {
-  background-color: #cc0000;
+  background-color: #a01a1e;
 }
