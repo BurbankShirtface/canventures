@@ -19,19 +19,26 @@ function CustomSheds() {
   return (
     <div className="custom-sheds">
       <div className="custom-sheds-header">
-        <h1>Custom Sheds</h1>
+        <h1>
+          <span className="red">CAN</span>Sheds
+        </h1>
         <p>
-          Discover our premium custom-built sheds, tailored to your vision.
+          Discover our premium custom-built and pre-constructed sheds, tailored
+          to your vision and built to last.
           <br />
           <br />
-          We offer complete customization of size, color, windows, doors, and
-          more to match your needs. Transform your shed into any space - from
-          basic storage to a fully insulated tiny home or office. All structures
-          meet Ontario Building Code Standards. We assemble and deliver to your
-          location, with on-site assembly and customization available when
-          required.
+          Crafted locally in Ontario, Canada, our sheds are built using premium
+          Canadian lumber whenever possible, ensuring quality and durability.
           <br />
-          <br /> Let us create your perfect blend of functionality and style.
+          <br />
+          We offer full customization of size, color, windows, doors, and more
+          to suit your unique needs. Whether you need basic storage or a fully
+          insulated tiny home or office, our structures meet Ontario Building
+          Code standards. We handle delivery to your location, with on-site
+          assembly and further customization available if needed.
+          <br />
+          <br /> We provide the perfect blend of functionality and style,
+          designed just for you.
         </p>
       </div>
 

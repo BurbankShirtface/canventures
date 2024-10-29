@@ -14,14 +14,35 @@ import trailer9 from "../assets/trailer9.png";
 import trailer10 from "../assets/trailer10.png";
 import trailer11 from "../assets/trailer11.png";
 import trailer12 from "../assets/trailer12.png";
+import Beckner from "../assets/becknerLogo.png";
 
 function CustomTrailers() {
   return (
     <div className="custom-trailers">
       <div className="custom-trailers-header">
-        <h1>Custom Trailers</h1>
+        <h1>
+          <span className="red">CAN</span>Trailers
+        </h1>
         <p>
+          <span className="red">CAN</span>Ventures is the home of Beckner
+          Trailers Eastern Division.
+          <br />
+          <br />
+          <img
+            className="beckner-logo"
+            src={Beckner}
+            alt="Beckner Trailers Logo"
+          />
+          <br />
+          <br />
+          All of our high-quality, all-aluminum trailers are built right here in
+          Ontario, Canada, by Beckner Trailers.
+          <br />
+          <br />
           Discover our premium custom-built trailers, tailored to your vision.
+          {/* All trailers are custom built by Beckner Trailers right here in
+          Ontario, Canada. We only make high-quality, all-aluminum trailers,
+          ensuring durability and performance. */}
           <br />
           <br /> We offer complete customization of size, features, and
           specifications to match your needs. Transform your trailer into the

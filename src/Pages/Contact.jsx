@@ -18,8 +18,8 @@ function Contact() {
           </li>
           <li>
             Email:{" "}
-            <a href="mailto:craig@becknertrailers.com">
-              craig@becknertrailers.com
+            <a href="mailto:info@canventures.ca">
+              info@canventures.ca
             </a>
           </li>
           <li>Address: 10965 Van Camp Rd, Mountain, Ontario</li>

@@ -52,8 +52,9 @@ function Home() {
           Welcome to <span className="red">CAN</span>Ventures
         </h1>
         <p className="landing-text">
-          Your premier distributor of custom-built sheds and trailers. We
-          partner with industry-leading manufacturers to bring you top-quality,
+          Your premier manufacturer and distributor of{" "}
+          <span className="red">Ontario-made</span>, custom-built sheds and
+          trailers. We partner with industry-leaders to bring you top-quality,
           personalized solutions for all your storage and transportation needs.
         </p>
       </div>
