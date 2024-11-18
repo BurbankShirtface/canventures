@@ -39,7 +39,7 @@ function CustomTrailers() {
           Ontario, Canada, by Beckner Trailers.
           <br />
           <br />
-          Discover our premium custom-built trailers, tailored to your vision.
+          Discover our premium customizable trailers, tailored to your vision.
           {/* All trailers are custom built by Beckner Trailers right here in
           Ontario, Canada. We only make high-quality, all-aluminum trailers,
           ensuring durability and performance. */}
@@ -96,7 +96,7 @@ function CustomTrailers() {
       </section>
 
       <section className="cta">
-        <h2>Ready to Get Your Custom Trailer?</h2>
+        <h2>Ready to Get Your New Trailer?</h2>
         <p>
           Contact us today to discuss your specific requirements and get a free
           quote.

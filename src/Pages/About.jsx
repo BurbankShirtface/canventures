@@ -12,8 +12,8 @@ function About() {
           <h2>Our Story</h2>
           <p>
             CanVentures is Canada's premier distributor of custom-built sheds
-            and trailers. Founded in 2023, we're committed to providing
-            top-quality storage and transportation solutions to our customers.
+            and trailers. We're committed to providing top-quality storage and
+            transportation solutions to our customers.
           </p>
         </section>
 
@@ -29,7 +29,7 @@ function About() {
         </section>
       </div>
 
-      <section className="team">
+      {/* <section className="team">
         <h2>Our Team</h2>
         <div className="team-members">
           <div className="team-member">
@@ -49,7 +49,7 @@ function About() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="values">
         <h2>Our Values</h2>
