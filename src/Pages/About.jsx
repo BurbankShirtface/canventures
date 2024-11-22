@@ -5,15 +5,18 @@ import "./About.css";
 function About() {
   return (
     <div className="about">
-      <h1>About CanVentures</h1>
+      <h1>
+        About <span className="red">CAN</span>Ventures
+      </h1>
 
       <div className="about-header">
         <section className="company-intro">
           <h2>Our Story</h2>
           <p>
-            CanVentures is Canada's premier distributor of custom-built sheds
-            and trailers. We're committed to providing top-quality storage and
-            transportation solutions to our customers.
+            <span className="red">CAN</span>Ventures is Canada's premier
+            distributor of custom-built sheds and trailers. We're committed to
+            providing top-quality storage and transportation solutions to our
+            customers.
           </p>
         </section>
 

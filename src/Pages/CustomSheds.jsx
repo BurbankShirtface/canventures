@@ -31,11 +31,10 @@ function CustomSheds() {
           Canadian lumber whenever possible, ensuring quality and durability.
           <br />
           <br />
-          We offer a full line of custom options to suit your unique needs.
-          {/* Whether you need basic storage or a fully insulated tiny home or
-          office, our structures meet Ontario Building Code standards. We handle
-          delivery to your location, with on-site assembly and further
-          customization available if needed. */}
+          Whether you need basic storage or a fully insulated tiny home or
+          office, our structures meet Ontario Building Code standards, and
+          drawings can be provided. We handle delivery to your location, with
+          on-site assembly and further customization available if needed.
           <br />
           <br /> We provide the perfect blend of functionality and style,
           designed just for you.

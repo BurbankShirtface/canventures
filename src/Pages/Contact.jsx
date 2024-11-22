@@ -57,7 +57,7 @@ function Contact() {
           <li>
             Email: <a href="mailto:info@canventures.ca">info@canventures.ca</a>
           </li>
-          <li>Located just South of Ottawa, Serving all of Ontario</li>
+          <li>Located just South of Ottawa</li>
         </ul>
       </section>
 
