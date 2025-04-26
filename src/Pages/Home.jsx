@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -64,11 +65,11 @@ function Home() {
         <div className="product-categories">
           <div className="category">
             <h3>
-              <a href="/custom-sheds">
+              <Link to="/custom-sheds">
                 <span className="red">CAN</span>Sheds
-              </a>
+              </Link>
             </h3>
-            <a href="/custom-sheds" className="slider-link">
+            <Link to="/custom-sheds" className="slider-link">
               <Slider {...sliderSettings}>
                 <div className="slide-img">
                   <img
@@ -111,15 +112,15 @@ function Home() {
                   <img src={shed12} alt="Custom Shed 12" />
                 </div>
               </Slider>
-            </a>
+            </Link>
           </div>
           <div className="category">
             <h3>
-              <a href="/custom-trailers">
+              <Link to="/custom-trailers">
                 <span className="red">CAN</span>Trailers
-              </a>
+              </Link>
             </h3>
-            <a href="/custom-trailers" className="slider-link">
+            <Link to="/custom-trailers" className="slider-link">
               <Slider {...sliderSettings}>
                 <div className="slide-img">
                   <img
@@ -159,7 +160,7 @@ function Home() {
                   <img src={trailer11} alt="Custom Trailer 11" />
                 </div>
               </Slider>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -176,9 +177,9 @@ function Home() {
 
       </section> */}
       <section className="contact-us">
-        <a href="/contact" className="contact-button">
+        <Link to="/contact" className="contact-button">
           Contact Us Today
-        </a>
+        </Link>
       </section>
     </div>
   );

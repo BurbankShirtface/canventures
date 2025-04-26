@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -10,9 +11,9 @@ function Footer() {
           reserved.
         </p>
         <nav className="footer-nav">
-          {/* <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a> */}
-          <a href="/contact">Contact Us</a>
+          {/* <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/terms">Terms of Service</Link> */}
+          <Link to="/contact">Contact Us</Link>
         </nav>
       </div>
     </footer>
