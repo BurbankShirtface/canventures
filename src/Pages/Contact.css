@@ -47,6 +47,30 @@
   caret-color: #000000;
 }
 
+.form-group input:disabled,
+.form-group textarea:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+}
+
 .contact-form button {
   display: inline-block;
   padding: 15px 30px;
@@ -63,6 +87,11 @@
   align-self: center;
 }
 
-.contact-form button:hover {
+.contact-form button:hover:not(:disabled) {
   background-color: #a01a1e;
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

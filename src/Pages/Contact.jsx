@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 import "./Contact.css";
 
 function Contact() {
@@ -9,35 +8,55 @@ function Contact() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: null,
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus({ loading: true, success: false, error: null });
 
-    emailjs
-      .send(
-        "service_vsp04gt",
-        "template_ru6c77i",
-        formData,
-        "cJkZQ-5MV5l-A9LQb"
-      )
-      .then((response) => {
-        console.log("Email sent successfully!", response.status, response.text);
-        // Optionally reset the form
+    try {
+      const response = await fetch("https://formspree.io/f/mgvkdgzq", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: new FormData(e.target),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        setStatus({ loading: false, success: true, error: null });
         setFormData({
           name: "",
           phone: "",
           email: "",
           message: "",
         });
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
+      } else {
+        setStatus({
+          loading: false,
+          success: false,
+          error: result.errors
+            ? result.errors.map((err) => err.message).join(", ")
+            : "Failed to send message. Please try again later.",
+        });
+      }
+    } catch (error) {
+      setStatus({
+        loading: false,
+        success: false,
+        error: "Failed to send message. Please try again later.",
       });
+    }
   };
 
   return (
@@ -63,7 +82,18 @@ function Contact() {
 
       <section className="contact-form">
         <h2>Send Us a Message</h2>
-        <form autoComplete="off" onSubmit={handleSubmit}>
+        {status.success && (
+          <div className="success-message">
+            Thank you for your message! We'll get back to you soon.
+          </div>
+        )}
+        {status.error && <div className="error-message">{status.error}</div>}
+        <form
+          action="https://formspree.io/f/mgvkdgzq"
+          method="POST"
+          autoComplete="off"
+          onSubmit={handleSubmit}
+        >
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
@@ -73,6 +103,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
+              disabled={status.loading}
             />
           </div>
           <div className="form-group">
@@ -83,6 +114,7 @@ function Contact() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
+              disabled={status.loading}
             />
           </div>
           <div className="form-group">
@@ -94,6 +126,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
+              disabled={status.loading}
             />
           </div>
           <div className="form-group">
@@ -104,9 +137,12 @@ function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
+              disabled={status.loading}
             ></textarea>
           </div>
-          <button type="submit">Send Message</button>
+          <button type="submit" disabled={status.loading}>
+            {status.loading ? "Sending..." : "Send Message"}
+          </button>
         </form>
       </section>
 
